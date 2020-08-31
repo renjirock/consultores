@@ -143,6 +143,16 @@
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-3">
+                        <a href="nosotros.html#reconocimientos"><img class="img-fluid" src="assets/img/baner-reconocimiento-c.png" alt="image reconocimiento"></a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="nosotros.html#reconocimientos"><img class="img-fluid" src="assets/img/baner-reconocimiento-w.png" alt="image reconocimiento"></a>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
@@ -368,23 +378,23 @@
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
     <script type="text/javascript">
-//Evento clic de la etiqueta con la clase (.js-boton-cookie)
-$('.js-boton-cookie').click(function() {
- //Almaceno los datos en localStorage (clave, valor)
- localStorage.setItem('luismasDEV', 'Luis Rene Mas Mas');
- //Oculto la barra que muestra la información de política de cookies
- $('.politicas-cookie').css('display', 'none');
- //Muestro un mensaje en consola
- console.log('Haz aceptado nuestra política de cookies. ☺️');
-});
+        //Evento clic de la etiqueta con la clase (.js-boton-cookie)
+        $('.js-boton-cookie').click(function() {
+        //Almaceno los datos en localStorage (clave, valor)
+        localStorage.setItem('luismasDEV', 'Luis Rene Mas Mas');
+        //Oculto la barra que muestra la información de política de cookies
+        $('.politicas-cookie').css('display', 'none');
+        //Muestro un mensaje en consola
+        console.log('Haz aceptado nuestra política de cookies. ☺️');
+        });
 
-//Creo la variable "dev" que almacena el valor asignado que seria (Luis Rene Mas Mas)
-var dev = localStorage.getItem('luismasDEV');
-//Realizo una condición si el valor obtenido de la variable "dev" es diferente (null) quiere decir que el usuario a aceptado nuestra política de cookies
-if(dev != null){
- $('.politicas-cookie').css('display', 'none');
-}else{//De lo contrario muestro la información
- $('.politicas-cookie').css('display', 'block');
-}
+        //Creo la variable "dev" que almacena el valor asignado que seria (Luis Rene Mas Mas)
+        var dev = localStorage.getItem('luismasDEV');
+        //Realizo una condición si el valor obtenido de la variable "dev" es diferente (null) quiere decir que el usuario a aceptado nuestra política de cookies
+        if(dev != null){
+        $('.politicas-cookie').css('display', 'none');
+        }else{//De lo contrario muestro la información
+        $('.politicas-cookie').css('display', 'block');
+        }
     </script>
 </html>
