@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -21,36 +21,14 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="cookiealert.css" />
+        <script src="js/call.js"></script>
     </head>
+    
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container"> 
-                <a class="navbar-brand js-scroll-trigger tittle" href="index.html">Valin & Ivo Partners</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- Menu-->
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Servicios
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="asesoria_mentoria.html">Asesoría y Mentoría</a>
-                                <a class="dropdown-item" href="consultoria.html">Consultoría</a>
-                                <a class="dropdown-item" href="Eventos.html">Eventos online</a>
-                                <a class="dropdown-item" href="Consultor_mano.html">Consultor a la mano</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="formacion.html">Formación</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contactanos.html">Contáctanos</a></li>
-                    </ul>
-                </div>
-            </div>
+            <div w3-include-html="nav.html"></div> 
+        </nav> 
         </nav>
         <!-- Masthead-->
         <video autoplay muted loop id="myVideo">
@@ -295,7 +273,7 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Dirección</h4>
+                                <h4 class="text-uppercase m-0">Visítanos</h4>
                                 <hr class="my-4">
                                 <div class="text-black-50 text-info-m">Carrera 37 #52-43, Bucarmanga, Colombia, Oficina 503</div>
                             </div>
@@ -305,9 +283,9 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
+                                <h4 class="text-uppercase m-0">¿Tienes alguna pregunta?</h4>
                                 <hr class="my-4" />
-                                <div class="text-info-m text-black-50"><a href="#!">ceo@valinivopartners.com</a></div>
+                                <div class="text-info-m text-black-50"><a href="#!">administrativo@valinivopartners.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -315,9 +293,9 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Celular</h4>
+                                <h4 class="text-uppercase m-0">Llámanos </h4>
                                 <hr class="my-4" />
-                                <div class="text-info-m text-black-50">+57 313 5772065</div>
+                                <div class="text-info-m text-black-50"><p><i class="fab fa-whatsapp"></i> +57 313 5772065</p> <p> <i class="fas fa-phone-volume"></i> +7 6808008</p></div>
                             </div>
                         </div>
                     </div>
@@ -325,7 +303,7 @@
             </div>
         </section>
         <!-- Contact-->
-        <section class="contact-section bg-black">
+        <section class="contact-section last-m">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -336,20 +314,27 @@
                 </div>
             </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://twitter.com/valin_ivo_vip"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="https://www.facebook.com/valinivopartners/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="https://www.youtube.com/channel/UCR_-Lkdpx8Db3-KGIsKV3Hg"><i class="fab fa-youtube"></i></a>
-                    <a class="mx-2" href="https://www.instagram.com/valin_ivo_partners/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2" href="https://twitter.com/valin_ivo_vip" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="https://www.facebook.com/valinivopartners/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://www.youtube.com/channel/UCR_-Lkdpx8Db3-KGIsKV3Hg" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="mx-2" href="https://www.instagram.com/valin_ivo_partners/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>
+        <!-- cookies y whatsapp-->
         <div class="politicas-cookie">
             <p class="info-cookie">
-            Utilizamos cookies personales y de terceros, al continuar navegando acepta la <a class="link-politica-cookie" href="#">política de cookies</a> de la pagina web. <a class="boton-cookie js-boton-cookie text-white" href="javascript:void(0)">ok</a>
+            Utilizamos cookies personales y de terceros, al presionar ok acepta la <a class="link-politica-cookie" href="politicas.html">política de privacidad y tratamiento de datos personales</a> de la pagina web. <a class="boton-cookie js-boton-cookie text-white" href="javascript:void(0)">ok</a>
             </p>
         </div>
+        <!-- whatsapp-->
+        <div class="col-2 fixed-bottom">
+            <div class="media">
+            <a href="https://bit.ly/3aH5OZf" target="_blank"><img class="mr-3 img-fluid" src="assets/img/whatsapp.png" alt="whatsapp image"></a>
+            </div>
+        </div>
         <!-- Footer-->
-        <footer class="footer bg-black-f small text-center text-white-50"><div class="container">Copyright © www.valinivopartners.com 2020</div></footer>
+        <footer class="footer footer-m small text-center text-white-50"><div class="container">Copyright © www.valinivopartners.com 2020</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -357,26 +342,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-
-        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-        <script src="/__/firebase/6.2.0/firebase-app.js"></script>
-
-        <!-- Add Firebase products that you want to use -->
-        <script src="/__/firebase/6.2.0/firebase-auth.js"></script>
-        <script src="/__/firebase/6.2.0/firebase-firestore.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+            includeHTML();
+        </script>
     </body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.19.0/firebase-app.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
     <script type="text/javascript">
         //Evento clic de la etiqueta con la clase (.js-boton-cookie)
         $('.js-boton-cookie').click(function() {

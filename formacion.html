@@ -11,46 +11,24 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Paytone+One&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="cookiealert.css" />
+        <script src="js/call.js"></script>
     </head>
+    
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger tittle" href="index.html">Valin & Ivo Partners</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- Menu-->
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Servicios
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="asesoria_mentoria.html">Asesoría y Mentoría</a>
-                                <a class="dropdown-item" href="consultoria.html">Consultoría</a>
-                                <a class="dropdown-item" href="Eventos.html">Eventos online</a>
-                                <a class="dropdown-item" href="Consultor_mano.html">Consultor a la mano</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="formacion.html">Formación</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contactanos.html">Contáctanos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            <div w3-include-html="nav.html"></div> 
+        </nav> 
         <!-- Masthead-->
         <header class="masthead M-N">
             <div class="container d-flex h-100 align-items-center">
@@ -127,11 +105,10 @@
         </section>
         <div class="politicas-cookie">
             <p class="info-cookie">
-            Utilizamos cookies personales y de terceros, al continuar navegando acepta la <a class="link-politica-cookie" href="#">política de cookies</a> de la pagina web. <a class="boton-cookie js-boton-cookie text-white" href="javascript:void(0)">ok</a>
+            Utilizamos cookies personales y de terceros, al presionar ok acepta la <a class="link-politica-cookie" href="politicas.html">política de privacidad y tratamiento de datos personales</a> de la pagina web. <a class="boton-cookie js-boton-cookie text-white" href="javascript:void(0)">ok</a>
             </p>
         </div>
-        <!-- Footer-->
-        <footer class="footer bg-black-f small text-center text-white-50"><div class="container">Copyright © www.valinivopartners.com 2020</div></footer>
+        <div w3-include-html="events.html"></div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -139,26 +116,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-
-        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-        <script src="/__/firebase/6.2.0/firebase-app.js"></script>
-
-        <!-- Add Firebase products that you want to use -->
-        <script src="/__/firebase/6.2.0/firebase-auth.js"></script>
-        <script src="/__/firebase/6.2.0/firebase-firestore.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+            includeHTML();
+        </script>
     </body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.19.0/firebase-app.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
     <script type="text/javascript">
         //Evento clic de la etiqueta con la clase (.js-boton-cookie)
         $('.js-boton-cookie').click(function() {
