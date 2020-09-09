@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -18,6 +18,9 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css'>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="cookiealert.css" />
@@ -27,7 +30,13 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div w3-include-html="nav.html"></div> 
+            <div class="container">
+                <a href="index.html" class="navbar-brand nav-link js-scroll-trigger">
+                    <!-- Logo Image -->
+                    <img src="assets/img/VIP-Logo.png" width="200" alt="" class="d-inline-block align-middle mr-2">
+                </a>
+                <div w3-include-html="nav.html"></div>
+            </div>
         </nav> 
         <!-- Masthead-->
         <header class="masthead M-N">
@@ -42,12 +51,10 @@
         <section class="servicios-section contenido-s bg-light"  id="nosotros">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 text-center text-orange">
-                        <hr class="h-parente"></hr>
-                        <hr class="h-parente"></hr>
-                        <i class="fas fa-question a-icon"></i>
+                    <div class="col-md-7 text-center text-orange wow fadeInLeft">
+                        <img class="img img-fluid" src="assets/img/consultoras.png" alt="Card image cap">
                     </div>
-                    <div class="offset-sm-2 col-md-5 offset-md-0">
+                    <div class="offset-sm-2 col-md-5 offset-md-0 wow fadeInRight">
                         <hr class="h-parente"></hr>
                         <h1 class="text-orange n-card-tittle">Excelentes respuestas para grandes preguntas</h1>
                         <hr class="h-parente"></hr>
@@ -57,9 +64,154 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- subservicios -->
+        <section>
+            <div class="container">
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInLeft">
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">RUP</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Nos encargamos de dar publicidad a los requisitos que habilitan a su empresa como proponente, participar en los procesos de contratación con entidades del estado, obtener el certificado del registro único de proponentes como prueba documental y cuya información ha sido verificada.</p>
+                            </div>
+                        </div>
+                        <hr class="h-parente"></hr>
+                        <div class="offset-sm-2 col-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo.png" alt="Card image cap">
+                        </div>
+                </div>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInRight">
+                        <div class="col-md-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo2.png" alt="Card image cap">
+                        </div>
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">Creacion SAS</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Te acompañaremos y apoyaremos en la creación de estatutos, preparación de la papelería y trámite ante la cámara de comercio.</p>
+                            </div>
+                        </div>
+                </div>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInLeft">
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">Estudio de insolvencia economica</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Estamos preparados para realizar la conciliación y lo procesos concursales, acuerdos de pago y procedimientos de negociación de deudas, tramite de insolvencia, créditos y objeciones a estos, convalidación de acuerdo privado y liquidación patrimonial.</p>
+                            </div>
+                        </div>
+                        <hr class="h-parente"></hr>
+                        <div class="offset-sm-2 col-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo.png" alt="Card image cap">
+                        </div>
+                </div>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInRight">
+                        <div class="col-md-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo2.png" alt="Card image cap">
+                        </div>
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">Modelamiento Financiero</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Desarrollamos proyecciones de ventas, capital de trabajo, proyección de inversiones en activos fijos, ajustes de estados financieros.</p>
+                            </div>
+                        </div>
+                        <hr class="h-parente"></hr>
+                </div>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInLeft">
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">Gerencia de costos</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Asistencia en el diagnostico de modelos de costos, metodología de costeo, costeo real de tus productos y/o servicios, con base en toda la información financiera, planteamiento estratégicos de la organización.</p>
+                            </div>
+                        </div>
+                        <hr class="h-parente"></hr>
+                        <div class="offset-sm-2 col-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo.png" alt="Card image cap">
+                        </div>
+                </div>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInRight">
+                        <div class="col-md-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo2.png" alt="Card image cap">
+                        </div>
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">Modelamiento de costos</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Asistencia en el diagnostico de modelos de costos, metodología de costeo, costeo real de tus productos y/o servicios, con base en toda la información financiera, planteamiento estratégicos de la organización.</p>
+                            </div>
+                        </div>
+                        <hr class="h-parente"></hr>
+                </div>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInLeft">
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">Evaluacion financiera</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Nos encargaremos de estimar el flujo de fondos, modelos de financiación, calculo del tiempo de retorno de la financiación, escoger el método de evaluación financiera que mejor se acople a tu empresa o proyecto.</p>
+                            </div>
+                        </div>
+                        <hr class="h-parente"></hr>
+                        <div class="offset-sm-2 col-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo.png" alt="Card image cap">
+                        </div>
+                </div>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInRight">
+                        <div class="col-md-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo2.png" alt="Card image cap">
+                        </div>
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">Elavoracion de contratos</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Estaremos a cargo de especificar obligaciones y responsabilidades, evitar malentendidos y reclamaciones, claridad en los aspectos acordados, seguridad y tranquilidad en ambas partes.</p>
+                            </div>
+                        </div>
+                        <hr class="h-parente"></hr>
+                </div>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInLeft">
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">Auditoria financiera</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Te acompañaremos durante el Recaudo de cartera, la conciliación de cartera, el estudio de créditos y de bienes proceso de insolvencia económica.</p>
+                            </div>
+                        </div>
+                        <hr class="h-parente"></hr>
+                        <div class="offset-sm-2 col-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo.png" alt="Card image cap">
+                        </div>
+                </div>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center z-depth-1 wow fadeInRight">
+                        <div class="col-md-3 offset-md-0">
+                            <img class="img img-fluid d-none d-sm-none d-md-block" src="assets/img/ejemplo2.png" alt="Card image cap">
+                        </div>
+                        <div class="offset-sm-2 col-md-9 offset-md-0">
+                            <hr class="h-parente"></hr>
+                            <h1 class="text-orange n-card-tittle">Diagnosticos Empresariales</h1>
+                            <div class="col-10 text-info-m n-text">
+                                <p>Obtendrá ayuda en el desarrollo de un plan de trabajo, asistencia en el desarrollo de tus proyectos y asesoramiento en tecnologías y métodos de expansión.</p>
+                            </div>
+                        </div>
+                        <hr class="h-parente"></hr>
+                </div>
+                <hr class="h-parente"></hr>
+            </div>
             <hr class="h-parente"></hr>
             <div class="text-center">
-                <a class="btn btn-no btn-primary js-scroll-trigger" href="contactanos.html#form">Contáctanos para más solicitar este servicio</a>
+                <a class="btn btn-no btn-primary js-scroll-trigger z-depth-1 wow zoomIn" href="contactanos.html#form">Contáctanos para más solicitar este servicio</a>
             </div>
         </section>
         <div class="politicas-cookie">
@@ -80,6 +232,10 @@
             includeHTML();
         </script>
     </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js'></script>
+    <script  src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 
     <script type="text/javascript">

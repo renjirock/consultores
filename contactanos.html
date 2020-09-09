@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -18,16 +18,25 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css'>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="cookiealert.css" />
-    <script src="js/call.js"></script>
+        <script src="js/call.js"></script>
     </head>
     
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div w3-include-html="nav.html"></div> 
+            <div class="container">
+                <a href="index.html" class="navbar-brand nav-link js-scroll-trigger">
+                    <!-- Logo Image -->
+                    <img src="assets/img/VIP-Logo.png" width="200" alt="" class="d-inline-block align-middle mr-2">
+                </a>
+                <div w3-include-html="nav.html"></div>
+            </div>
         </nav> 
         <!-- Masthead-->
         <header class="masthead M-N">
@@ -42,17 +51,17 @@
         <section class="servicios-section cursos-section bg-light"  id="nosotros">
             <div class="container align-items-center">
                 <div class="row justify-content-center">
-                    <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0 wow fadeInLeft">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Visítanos</h4>
                                 <hr class="my-4" />
-                                <div class="text-info-m text-black-50">Carrera 37 #52-43, Bucarmanga, Colombia, Oficina 503</div>
+                                <div class="text-info-m text-black-50">Carrera 37 #52-43, Bucaramanga, Colombia, Oficina 503</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-md-8 wow fadeInRight">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
@@ -65,8 +74,8 @@
                 </div>
                 <hr></hr>
                 <div class="row justify-content-center">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
+                    <div class="col-md-4 mb-3 mb-md-0 wow fadeInLeft">
+                        <div class="card py-4 h-100 z-depth-1">
                             <div class="card-body text-center">
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">¿Tienes alguna pregunta?</h4>
@@ -75,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0 wow fadeInRight">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
@@ -89,8 +98,8 @@
             </div>
         </section>
         <!-- suscribete-->
-        <section class="projects-section bg-light"  id="form">
-            <div class="container">
+        <section class="projects-section bg-light z-depth-1"  id="form">
+            <div class="container  wow zoomIn">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2"></i>
@@ -98,14 +107,28 @@
                         <form form name="contact" method="POST" data-netlify="true">
                             <div class="form-group contact_us">
                                 <label for="CorreoElectronico">Correo electrónico</label>
-                                <input type="email" class="form-control" id="CorreoElectronico" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="CorreoElectronico" placeholder="name@example.com" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group contact_us">
+                                        <label for="Nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="Nombre" placeholder="Nombre" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="form-group contact_us">
+                                        <label for="Apellidos">Apellidos</label>
+                                        <input type="text" class="form-control" id="Apellidos" placeholder="Apellidos" required>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="form-group contact_us">
+                                <label for="Empresa">Nombre de la empresa</label>
+                                <input type="text" class="form-control" id="Empresa" placeholder="Nombre de la empresa">
                             </div>
                             <div class="form-group contact_us">
-                                <label for="NombreCompleto">Nombre Completo</label>
-                                <input type="name" class="form-control" id="NombreCompleto" placeholder="Nombre completo">
-                            </div>
-                            <div class="form-group contact_us">
-                                <label for="Sexo">Genero</label>
+                                <label for="Sexo">Género</label>
                                 <select class="form-control col-4" id="Sexo" placeholder="Selecciona uno">
                                 <option>Hombre</option>
                                 <option>Mujer</option>
@@ -114,7 +137,7 @@
                             </div>
                             <div class="form-group contact_us">
                                 <label for="TelefonoCelular">Teléfono/Celular</label>
-                                <input type="tel" class="form-control col-4" id="TelefonoCelular" placeholder="+57 300 000 0000">
+                                <input type="tel" class="form-control col-4" id="TelefonoCelular" placeholder="+57 300 000 0000" required>
                             </div>
                             <div class="form-group contact_us">
                                 <label for="info">Información adicional</label>
@@ -144,6 +167,10 @@
             includeHTML();
         </script>
     </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js'></script>
+    <script  src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 
     <script type="text/javascript">

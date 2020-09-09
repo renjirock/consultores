@@ -18,6 +18,9 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="cookiealert.css" />
@@ -27,9 +30,14 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div w3-include-html="nav.html"></div> 
+            <div class="container">
+                <a href="index.html" class="navbar-brand nav-link js-scroll-trigger">
+                    <!-- Logo Image -->
+                    <img src="assets/img/VIP-Logo.png" width="200" alt="" class="d-inline-block align-middle mr-2">
+                </a>
+                <div w3-include-html="nav.html"></div>
+            </div>
         </nav> 
-        </nav>
         <!-- Masthead-->
         <video autoplay muted loop id="myVideo">
                 <source src="assets/img/Fondo.mp4" type="video/mp4">
@@ -37,45 +45,66 @@
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
-                    <img class="img-logo img-fluid" src="assets/img/VIP-Logo.png" alt="" />
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Consultores jurídicos y financieros.</h2>
-                    <a class="btn btn-primary js-scroll-trigger" href="#about">Descubrenos</a>
+                    <img src="assets/img/Inicio-frase.png" class="img-fluid">
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Derecho, finanzas, tributación y contabilidad</h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#about">Descúbrenos</a>
                 </div>
             </div>
         </header>
         <!-- About-->
         <section class="about-section text-center animated wobble" id="about">
-            <div class="container">
+            <div class="container wow bounceIn">
                 <div class="row">
                     <div class="jumbotron jumbotron-fluid bg-transparent">
                         <div class="container">
                             <h1 class="display-4 text-orange mb-4 titulo-intenso">Alcanza tu máximo potencial con nosotros</h1>
                             <p class="lead text-white-50">
-                                Somos Valin Ivo Partners (VIP) una empresa de consultoría jurídica y financiera con mas de 10 años de experiencia, en nuestros servicios podrás encontrar el apoyo con temas de insolvencia económica, licitaciones, modelamiento de costos, cobro de cartera, creación de SAS y muchos más servicios que te ayudaran a ti y a tu empresa a llegar al siguiente nivel.
+                                Con mas de 10 años de experiencia y el equipo de trabajo mejor preparado que puedes imaginar, podrás encontrar el apoyo que necesitas con temas jurídicos y financieros para que tu y a tu empresa lleguen al siguiente nivel.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- reconocimientos-->
+        <section class="servicios-section contenido-s text-center" id="about">
+            <div class="container">
+                <h2 class="text-orange servicios n-card-tittle-s">Algunos de nuestros reconocimientos</h2>
+                <hr class="h-parente"></hr>
+                <div class="row justify-content-center">
+                    <div class="col-sm-3 mb-4 mx-auto">
+                        <a href="nosotros.html#reconocimientos"><img class="img-fluid wow fadeInLeft" src="assets/img/baner-reconocimiento-c.png" alt="image reconocimiento"></a>
+                    </div>
+                    <div class="col-sm-3  mb-4 mx-auto">
+                        <a href="nosotros.html#reconocimientos"><img class="img-fluid wow fadeInLeft" src="assets/img/baner-reconocimiento-b.png" alt="image reconocimiento"></a>
+                    </div>
+                    <div class="col-sm-3  mb-4 mx-auto">
+                        <a href="nosotros.html#reconocimientos"><img class="img-fluid wow fadeInRight" src="assets/img/baner-reconocimiento-n.png" alt="image reconocimiento"></a>
+                    </div>
+                    <div class="col-sm-3  mb-4 mx-auto">
+                        <a href="nosotros.html#reconocimientos"><img class="img-fluid wow fadeInRight" src="assets/img/baner-reconocimiento-w.png" alt="image reconocimiento"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- calificacion-->
-        <section class="servicios-section text-center" id="about">
+        <section class="text-center bg-white" id="about">
             <div class="container">
                 <div class="col-lg-10 offset-lg-1 pt-5 pb-5">
-                    <div id="client-testimonial-carousel" class="carousel slide bg-transparent" data-ride="carousel" style="height:200px;">
+                    <div id="client-testimonial-carousel" class="carousel slide bg-transparent z-depth-1 wow flipInX" data-ride="carousel" style="height:200px;">
                         <div class="carousel-inner h-100" role="listbox">
                             <div class="carousel-item active text-center p-4">
                                 <blockquote class="blockquote text-center">
-                                <p class="mb-0"><i class="fa fa-quote-left"></i> Trabajo preciso y eficiente, muy contento después de trabajar con ellos..
+                                <p class="mb-0"><i class="fa fa-quote-left"></i> Me gustó mucho, los temas claros y precisos.
                                 </p>
-                                <footer class="blockquote-footer">Newton,<cite title="Source Title"> Administrador de Soluciones ingenieria</cite></footer>
-                                <!-- Client review stars -->
+                                <!-- <footer class="blockquote-footer">Newton,<cite title="Source Title"> Administrador de Soluciones ingenieria</cite></footer>
+                                 Client review stars -->
                                 <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
                                 <p class="client-review-stars">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </p>
                                 </blockquote>
@@ -98,9 +127,9 @@
                             </div>
                             <div class="carousel-item text-center p-4">
                                 <blockquote class="blockquote text-center">
-                                <p class="mb-0"><i class="fa fa-quote-left"></i> Excelente trabajo, fue la mejor opción.
+                                <p class="mb-0"><i class="fa fa-quote-left"></i> Me gustó mucho, los temas claros y precisos
                                 </p>
-                                <footer class="blockquote-footer">Carl Sagan, <cite title="Source Title">Ceo de Soluciones Cosmicas</cite></footer>
+                                <!--<footer class="blockquote-footer">Carl Sagan, <cite title="Source Title">Ceo de Soluciones Cosmicas</cite></footer>
                                 <!-- Client review stars -->
                                 <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
                                 <p class="client-review-stars">
@@ -121,95 +150,150 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-3">
-                        <a href="nosotros.html#reconocimientos"><img class="img-fluid" src="assets/img/baner-reconocimiento-c.png" alt="image reconocimiento"></a>
+        </section>
+        <!-- aliandos-->
+        <section class="bg-white"  id="reconocimientos">
+        <h2 class="text-orange servicios tittle-curse text-center">Nuestros aliandos</h2> 
+            <div id="carouselExampleControls" class="carousel slide  servicios-section z-depth-1 wow zoomIn" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img src="assets/img/Logos-01.png" class="d-block w-100" alt="...">
                     </div>
-                    <div class="col-sm-3">
-                        <a href="nosotros.html#reconocimientos"><img class="img-fluid" src="assets/img/baner-reconocimiento-w.png" alt="image reconocimiento"></a>
+                    <div class="carousel-item">
+                        <img src="assets/img/Logos-012.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
             </div>
         </section>
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
-            <div class="container">
-                <div class="col-lg-10 mx-auto">
-                    <h2 class="text-orange servicios n-card-tittle-s">Crece con nuestros servicios</h2>
-                    <hr></hr>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-4">
-                            <div class="card col-12">
-                                <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="card-img-top" src="assets/img/consultoras.png" alt="Card image cap">
-                                </a>
-                                <a class="btn btn-secundary" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
-                                    Consultoría
-                                </a>
-                                <div class="collapse" id="collapseOne">
-                                    <div class="card card-body">
-                                        Queremos ser parte de tu vida y tu empresa para así ayudarte a tomar las mejores decisiones, estas a un clic de llegar al siguiente nivel.
-                                        <a href="consultoria.html">Mas información</a>
-                                    </div>
+            <div class="container wow flipInX">
+                <div class="container">
+                    <div class="col-lg-10 mx-auto">
+                        <h2 class="text-orange servicios n-card-tittle-s">Crece con nuestros servicios</h2>
+                        <hr></hr>
+                        <div class="container">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <div class="container-img">
+                                    <img src="assets/img/consultoras-s.png" style="width:100%">
+                                    <a href="consultoria.html">
+                                        <div class="content-img text-center">
+                                            <i class="fas fa-mouse"></i>
+                                            <p>No dudes en preguntarnos, estaremos felices de darte una respuesta</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card col-12">
-                                <a data-toggle="collapse" href="#collapseSecond" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="card-img-top" src="assets/img/asesoria.png" alt="Card image cap">
-                                </a>
-                                <a class="btn btn-secundary" data-toggle="collapse" href="#collapseSecond" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    Asesoría 
-                                </a>
-                                <div class="collapse" id="collapseSecond">
-                                    <div class="card card-body">
-                                        ¿Te has puesto a pensar que se sentiría poder tener una voz que te diga ¡lo estás haciendo bien!? eso queremos hacer contigo y tu empresa poderte guiar para que puedas tomar las mejores decisiones.
-                                        <a href="asesoria_mentoria.html">Mas información</a>
-                                    </div>
+                        <div class="container">
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <div class="container-img">
+                                    <img src="assets/img/asesoria-s.png" style="width:100%">
+                                    <a href="asesoria_mentoria.html">
+                                        <div class="content-img text-center">
+                                            <i class="fas fa-mouse"></i>
+                                            <p>Comienza tus proyectos, nosotros siempre te respaldamos</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card col-12">
-                                <a data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="card-img-top img-fluid" src="assets/img/eventos.png" alt="Card image cap">
-                                </a>
-                                <a class="btn btn-secundary" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">Eventos</a>
-                                <div class="collapse" id="collapse3">
-                                    <div class="card card-body">
-                                        Aquí podrás encontrar información de nuestros próximos eventos que te ayudaran a capacitarte, poderte relacionar con diversos empresarios y en muchas oportunidades participar para ganarte premios con nosotros.
-                                        <a href="eventos.html">Mas información</a>
-                                    </div>
+                        <div class="container">
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <div class="container-img">
+                                    <img src="assets/img/eventos-s.png" style="width:100%">
+                                    <a href="Eventos.html">
+                                        <div class="content-img text-center">
+                                            <i class="fas fa-mouse"></i>
+                                            <p>La mejor informacion en un solo lugar</p>
+                                        </div>
+                                    </a>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <div class="container-img">
+                                    <img src="assets/img/Formación-s.png" style="width:100%">
+                                    <a href="formacion.html">
+                                        <div class="content-img text-center">
+                                            <i class="fas fa-mouse"></i>
+                                            <p>Los mejores certificados y cursos que puedas encontrar</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="caption-container text-orange">
+                            <p id="caption"></p>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="mb-4 mx-auto column">
+                                <img class="demo cursor" src="assets/img/Cosultoria-p.png" style="width:100%" onclick="currentSlide(1)" alt="Consultoria">
+                            </div>
+                            <div class="cmb-4 mx-auto column">
+                                <img class="demo cursor" src="assets/img/Asesoria-p.png" style="width:100%" onclick="currentSlide(2)" alt="Asesoria y Mentoria">
+                            </div>
+                            <div class="mb-4 mx-auto column">
+                                <img class="demo cursor" src="assets/img/Eventos-p.png" style="width:100%" onclick="currentSlide(3)" alt="Eventos">
+                            </div>
+                            <div class="mb-4 mx-auto column">
+                                <img class="demo cursor" src="assets/img/educacion-p.png" style="width:100%" onclick="currentSlide(4)" alt="Formacion">
                             </div>
                         </div>
                     </div>
-                    <hr></hr>
-                    <div class="row justify-content-center">
-                        <div class="card col-sm-7 align-self-center">
-                            <a data-toggle="collapse" href="#collapseF" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="card-img img-fluid" src="assets/img/Formación.png" alt="Card image">
-                            </a>
-                            <a class="btn btn-secundary" data-toggle="collapse" href="#collapseF" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                Formación
-                            </a>
-                            <div class="collapse" id="collapseF">
-                                <div class="card card-body">
-                                    El mundo cambia y las normas o como se manejan las empresas también, por eso estamos dispuestos a capacitarte en todo el ámbito jurídico y financiero.
-                                    <a href="formacion.html">Mas información</a>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
         <!--cursos seccion-->
         <section class="servicios-section cursos-section bg-light" id="projects">
             <div class="container">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-10 mx-auto z-depth-1 wow wobble">
                 <h2 class="text-orange servicios tittle-curse">Cursos mas populares</h2> 
                 <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
                     <ol class="carousel-indicators">
@@ -270,17 +354,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
+                        <div class="card py-4 h-100 z-depth-1 wow fadeInLeft">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Visítanos</h4>
                                 <hr class="my-4">
-                                <div class="text-black-50 text-info-m">Carrera 37 #52-43, Bucarmanga, Colombia, Oficina 503</div>
+                                <div class="text-black-50 text-info-m">Carrera 37 #52-43, Bucaramanga, Colombia, Oficina 503</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
+                    <div class="col-md-4 mb-3 mb-md-0 ">
+                        <div class="card py-4 h-100  z-depth-1 wow zoomIn">
                             <div class="card-body text-center">
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">¿Tienes alguna pregunta?</h4>
@@ -290,7 +374,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
+                        <div class="card py-4 h-100  z-depth-1 wow fadeInRight">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Llámanos </h4>
@@ -328,7 +412,7 @@
             </p>
         </div>
         <!-- whatsapp-->
-        <div class="col-2 fixed-bottom">
+        <div class="col-2 fixed-bottom wow zoomIn">
             <div class="media">
             <a href="https://bit.ly/3aH5OZf" target="_blank"><img class="mr-3 img-fluid" src="assets/img/whatsapp.png" alt="whatsapp image"></a>
             </div>
@@ -348,6 +432,11 @@
         </script>
     </body>
     <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js'></script>
+    <script  src="js/index.js"></script>
 
     <script type="text/javascript">
         //Evento clic de la etiqueta con la clase (.js-boton-cookie)

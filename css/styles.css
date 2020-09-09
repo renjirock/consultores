@@ -152,6 +152,99 @@ blockquote {
 .whatsapp{
   z-index: 30 !important;
 }
+/* servicios*/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+/*.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through 
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: transparent;
+  padding: 2px 16px;
+  color: white;
+  font-size: 2rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 10.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
 
 .politicas-cookie{
  display: none;
@@ -470,6 +563,7 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2;
 }
+
 
 hr {
   margin-top: 1rem;
@@ -3903,6 +3997,9 @@ input[type=button].btn-block {
 .custom-range::-moz-focus-outer {
   border: 0;
 }
+.bg-gray {
+  background-color: transparent !important;
+}
 .custom-range::-webkit-slider-thumb {
   width: 1rem;
   height: 1rem;
@@ -5205,6 +5302,10 @@ a.badge-black:focus, a.badge-black.focus {
   font-family: 'Bebas Neue';
   font-size: 70px;
 }
+.f-tittle {
+  font-family: 'Bebas Neue';
+  font-size: 70px!important;
+}
 .titulo-intenso-s{
   font-family: 'Bebas Neue';
   font-size: 50px;
@@ -5213,7 +5314,22 @@ a.badge-black:focus, a.badge-black.focus {
   color: #212529;
   background-color: #e9ecef;
 }
+/* imagenes servicios */
+.container-img {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
 
+.container-img .content-img {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
 
 .list-group-item {
   position: relative;
@@ -6026,6 +6142,7 @@ a.close.disabled {
   position: relative;
   width: 100%;
   overflow: hidden;
+  background-color: transparent!important;
 }
 .carousel-inner::after {
   display: block;
@@ -10440,7 +10557,7 @@ iframe{
   background: #fff;
 }
 .servicios-section{
-  background: url("../assets/img/Web-textura.jpg");
+  background: url("../assets/img/Web-textura.jpg") !important;
   background-repeat: no-repeat;
   padding: 0.5rem 0;
 }
@@ -10509,6 +10626,9 @@ min-height: 200px;
 }
 .contenido-s{
   padding: 6rem 0;
+}
+.btn-secundary{
+  font-size: 1.1rem;
 }
 .projects-section .featured-text {
   padding: 2rem;
